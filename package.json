@@ -1,0 +1,19 @@
+{
+  "name": "gorgonfreeman.github.io",
+  "version": "1.0.0",
+  "description": "Static hosted site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://GorgonFreeman@github.com/GorgonFreeman/gorgonfreeman.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GorgonFreeman/gorgonfreeman.github.io/issues"
+  },
+  "homepage": "https://github.com/GorgonFreeman/gorgonfreeman.github.io#readme"
+}
