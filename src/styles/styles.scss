@@ -19,6 +19,7 @@ html {
   display: block;
 
   left: 0;
+  opacity: 0;
 
   + .bubble_wrapper_outer {
     left: 5%;
@@ -42,7 +43,9 @@ html {
 }
 
 .bubble_wrapper_outer {
-  animation: float 25s linear infinite;
+  animation: 
+    float 25s linear infinite,
+    appear 6s linear normal forwards;
 }
 
 .bubble_wrapper_inner {
@@ -73,6 +76,15 @@ html {
   }
   50% { 
     transform: translateX(0);
+  }
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% { 
+    opacity: 1;
   }
 }
 
