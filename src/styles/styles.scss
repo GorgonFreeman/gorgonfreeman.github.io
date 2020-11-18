@@ -5,7 +5,7 @@ html {
 }
 
 .bubble {
-  width: 50px;
+  width: 55px;
   height: 45px;
   display: block;
   position: absolute;
@@ -13,23 +13,23 @@ html {
   box-shadow: inset 5px 10px 20px #ffffff75;
   background: radial-gradient(ellipse at bottom right, #ffffffa8 0%, transparent 70%);
   top: 0;
-  animation: 
-    wobble 5s infinite,
-    float 25s linear infinite;
+  animation: wobble 5s linear infinite;    
 }
 
-.bubble_wrapper {
-  animation: drift 5s ease-in-out infinite;
+.bubble_wrapper_outer {
+  animation: float 25s linear infinite;
+}
+
+.bubble_wrapper_inner {
+  animation: drift 8s linear infinite;
 }
 
 @keyframes wobble {
   0%, 100% { 
-    width: 55px;
-    height: 45px;
+    transform: scale(1.1, 1);
   }
   50% { 
-    width: 40px;
-    height: 47px;
+    transform: scale(0.8, 1.02);
   }
 }
 
