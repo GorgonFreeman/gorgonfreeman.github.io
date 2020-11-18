@@ -9,6 +9,9 @@ gulp.task('start', function() {
       baseDir: "./"
     }
   });
+
+  gulp.watch("src/styles/*.scss", gulp.parallel(['sass']));
+  gulp.watch("*.html").on('change', browserSync.reload);
 });
 
 // Compile sass into CSS & auto-inject into browsers
