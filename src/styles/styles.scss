@@ -1,5 +1,13 @@
 $blue: #05205f;
 
+$bubble_width_1: random(90) + 30;
+$bubble_width_2: random(90) + 30;
+$bubble_width_3: random(90) + 30;
+$bubble_width_4: random(90) + 30;
+$bubble_width_5: random(90) + 30;
+$bubble_width_6: random(90) + 30;
+$bubble_width_7: random(90) + 30;
+
 html {
   background: $blue;
 }
@@ -24,18 +32,34 @@ html {
   + .bubble_wrapper_outer {
     left: 5%;
     animation-delay: 1s;
+    .bubble {
+      width: ($bubble_width_1 + px);
+      height: ($bubble_width_1 * 0.9 + px);
+    }
 
     + .bubble_wrapper_outer {
       left: 30%;
       animation-delay: 2s;
+      .bubble {
+        width: ($bubble_width_2 + px);
+        height: ($bubble_width_2 * 0.9 + px);
+      }
 
       + .bubble_wrapper_outer {
         left: 60%;
         animation-delay: 5s;
+        .bubble {
+          width: ($bubble_width_3 + px);
+          height: ($bubble_width_3 * 0.9 + px);
+        }
 
         + .bubble_wrapper_outer {
           left: 90%;
           animation-delay: 3s;
+          .bubble {
+            width: ($bubble_width_4 + px);
+            height: ($bubble_width_4 * 0.9 + px);
+          }
         }
       }
     }
