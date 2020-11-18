@@ -7,13 +7,38 @@ html {
 .bubble {
   width: 55px;
   height: 45px;
-  display: block;
-  position: absolute;
   border-radius: 50%;
   box-shadow: inset 5px 10px 20px #ffffff75;
   background: radial-gradient(ellipse at bottom right, #ffffffa8 0%, transparent 70%);
   top: 0;
-  animation: wobble 5s linear infinite;    
+  animation: wobble 5s linear infinite;
+}
+
+.bubble_wrapper_outer {
+  position: absolute;
+  display: block;
+
+  left: 0;
+
+  + .bubble_wrapper_outer {
+    left: 5%;
+    animation-delay: 1s;
+
+    + .bubble_wrapper_outer {
+      left: 30%;
+      animation-delay: 2s;
+
+      + .bubble_wrapper_outer {
+        left: 60%;
+        animation-delay: 5s;
+
+        + .bubble_wrapper_outer {
+          left: 90%;
+          animation-delay: 3s;
+        }
+      }
+    }
+  }
 }
 
 .bubble_wrapper_outer {
