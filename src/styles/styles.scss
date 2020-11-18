@@ -12,7 +12,10 @@ html {
   border-radius: 50%;
   box-shadow: inset 5px 10px 20px #ffffff75;
   background: radial-gradient(ellipse at bottom right, #ffffffa8 0%, transparent 70%);
-  animation: wobble 5s infinite;
+  animation: 
+    wobble 5s infinite,
+    drift 5s ease-in-out infinite,
+    float 25s linear infinite;
 }
 
 @keyframes wobble {
@@ -25,3 +28,22 @@ html {
     height: 40px;
   }
 }
+
+@keyframes float {
+  0% {
+    bottom: -50px;
+  }
+  100% { 
+    bottom: calc(100vh + 50px);
+  }
+}
+
+@keyframes drift {
+  0%, 100% {
+    margin-left: 40px;
+  }
+  50% { 
+    margin-left: 0px;
+  }
+}
+
