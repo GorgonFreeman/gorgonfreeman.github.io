@@ -30,7 +30,7 @@ html {
   opacity: 0;
 
   + .bubble_wrapper_outer {
-    left: 5%;
+    left: percentage((random(80) + 10) / 100);
     animation-delay: 1s;
     .bubble {
       width: ($bubble_width_1 + px);
@@ -38,7 +38,7 @@ html {
     }
 
     + .bubble_wrapper_outer {
-      left: 30%;
+      left: percentage((random(80) + 10) / 100);
       animation-delay: 2s;
       .bubble {
         width: ($bubble_width_2 + px);
@@ -46,7 +46,7 @@ html {
       }
 
       + .bubble_wrapper_outer {
-        left: 60%;
+        left: percentage((random(80) + 10) / 100);
         animation-delay: 5s;
         .bubble {
           width: ($bubble_width_3 + px);
@@ -54,7 +54,7 @@ html {
         }
 
         + .bubble_wrapper_outer {
-          left: 90%;
+          left: percentage((random(80) + 10) / 100);
           animation-delay: 3s;
           .bubble {
             width: ($bubble_width_4 + px);
