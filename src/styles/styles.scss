@@ -15,8 +15,11 @@ html {
   top: 0;
   animation: 
     wobble 5s infinite,
-    drift 5s ease-in-out infinite,
     float 25s linear infinite;
+}
+
+.bubble_wrapper {
+  animation: drift 5s ease-in-out infinite;
 }
 
 @keyframes wobble {
