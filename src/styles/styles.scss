@@ -16,16 +16,12 @@ html {
 }
 
 @keyframes wobble {
-  0% { 
+  0%, 100% { 
     width: 50px;
     height: 45px;
   }
   50% { 
     width: 55px;
     height: 40px;
-  }
-  100% { 
-    width: 50px;
-    height: 45px;
   }
 }
