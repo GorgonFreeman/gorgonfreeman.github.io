@@ -8,6 +8,14 @@ $bubble_width_5: random(90) + 30;
 $bubble_width_6: random(90) + 30;
 $bubble_width_7: random(90) + 30;
 
+$bubble_delay_1: random(10) + s;
+$bubble_delay_2: random(10) + s;
+$bubble_delay_3: random(10) + s;
+$bubble_delay_4: random(10) + s;
+$bubble_delay_5: random(10) + s;
+$bubble_delay_6: random(10) + s;
+$bubble_delay_7: random(10) + s;
+
 html {
   background: $blue;
 }
@@ -41,7 +49,7 @@ html {
 
   + .bubble_wrapper_outer {
     left: percentage((random(80) + 10) / 100);
-    animation-delay: random(10) + s;
+
     .bubble {
       width: ($bubble_width_1 + px);
       height: ($bubble_width_1 * 0.9 + px);
@@ -49,7 +57,6 @@ html {
 
     + .bubble_wrapper_outer {
       left: percentage((random(80) + 10) / 100);
-      animation-delay: random(10) + s;
       .bubble {
         width: ($bubble_width_2 + px);
         height: ($bubble_width_2 * 0.9 + px);
@@ -57,7 +64,6 @@ html {
 
       + .bubble_wrapper_outer {
         left: percentage((random(80) + 10) / 100);
-        animation-delay: random(10) + s;
         .bubble {
           width: ($bubble_width_3 + px);
           height: ($bubble_width_3 * 0.9 + px);
@@ -65,10 +71,49 @@ html {
 
         + .bubble_wrapper_outer {
           left: percentage((random(80) + 10) / 100);
-          animation-delay: random(10) + s;
           .bubble {
             width: ($bubble_width_4 + px);
             height: ($bubble_width_4 * 0.9 + px);
+          }
+        }
+      }
+    }
+  }
+}
+
+.bubble_wrapper_outer {
+  animation-delay: $bubble_delay_1;
+
+  .bubble_wrapper_inner, .bubble {
+    animation-delay: $bubble_delay_1;
+  }
+
+  + .bubble_wrapper_outer {
+    animation-delay: $bubble_delay_2;
+
+    .bubble_wrapper_inner, .bubble {
+      animation-delay: $bubble_delay_2;
+    }
+
+    + .bubble_wrapper_outer {
+      animation-delay: $bubble_delay_3;
+
+      .bubble_wrapper_inner, .bubble {
+        animation-delay: $bubble_delay_3;
+      }
+
+      + .bubble_wrapper_outer {
+        animation-delay: $bubble_delay_4;
+
+        .bubble_wrapper_inner, .bubble {
+          animation-delay: $bubble_delay_4;
+        }
+
+        + .bubble_wrapper_outer {
+          animation-delay: $bubble_delay_5;
+
+          .bubble_wrapper_inner, .bubble {
+            animation-delay: $bubble_delay_5;
           }
         }
       }
