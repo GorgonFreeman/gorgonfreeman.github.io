@@ -1,28 +1,14 @@
 $blue: #05205f;
 
-$bubble_width_1: random(90) + 30;
-$bubble_width_2: random(90) + 30;
-$bubble_width_3: random(90) + 30;
-$bubble_width_4: random(90) + 30;
-$bubble_width_5: random(90) + 30;
-$bubble_width_6: random(90) + 30;
-$bubble_width_7: random(90) + 30;
-
-$bubble_delay_1: random(10) + s;
-$bubble_delay_2: random(10) + s;
-$bubble_delay_3: random(10) + s;
-$bubble_delay_4: random(10) + s;
-$bubble_delay_5: random(10) + s;
-$bubble_delay_6: random(10) + s;
-$bubble_delay_7: random(10) + s;
+$bubbles_count: 14;
 
 @mixin bubbles {
-  @for $i from 1 through 9 {
+  @for $i from 1 through $bubbles_count {
     &:nth-child(#{$i}) {
       $bubble_width: random(90) + 30;
       $bubble_delay: random(10) + s;
-      $bubble_position: percentage((random(80) + 10) / 100);
-
+      $position_interval: ceil(100 / $bubbles_count) * $i;
+      $bubble_position: percentage((random($i) + $position_interval) / 100);
       left: $bubble_position;
       animation-delay: $bubble_delay;
 
