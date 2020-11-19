@@ -1,0 +1,106 @@
+$blue: #05205f;
+
+body.sea {
+  background: radial-gradient(ellipse at top center, #0d8a82 -50%, #151c35 80%);
+}
+
+$bubbles_count: 14;
+
+@mixin bubbles {
+  @for $i from 1 through $bubbles_count {
+    &:nth-child(#{$i}) {
+      $bubble_width: random(90) + 30;
+      $bubble_delay: random(20) + s;
+      $position_interval: ceil(100 / $bubbles_count) * $i;
+      $bubble_position: percentage((random($i) + $position_interval) / 100);
+      left: $bubble_position;
+      animation-delay: $bubble_delay;
+
+      * {
+        animation-delay: $bubble_delay;
+      }
+
+      .bubble {
+        width: ($bubble_width + px);
+        height: ($bubble_width * 0.9 + px);
+      }
+    }
+  }
+}
+
+.bubble {
+  width: 55px;
+  height: 45px;
+  border-radius: 50%;
+  box-shadow: inset 5px 10px 20px #ffffff75;
+  background: radial-gradient(ellipse at bottom right, #ffffffa8 0%, transparent 20%);
+  top: 0;
+  animation: wobble 5s linear infinite;
+}
+
+.bubble_wrapper_outer {
+  position: absolute;
+  display: block;
+
+  left: 0;
+  opacity: 0;
+
+  @include bubbles;
+}
+
+.screen {
+  position: fixed;
+  pointer-events: none;
+  overflow: hidden;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.bubble_wrapper_outer {
+  animation: 
+    float 25s linear infinite,
+    appear 6s linear normal forwards;
+}
+
+.bubble_wrapper_inner {
+  animation: drift 8s linear infinite;
+}
+
+@keyframes wobble {
+  0%, 100% { 
+    transform: scale(1.1, 1);
+  }
+  50% { 
+    transform: scale(0.8, 1.02);
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(calc(100vh + 50px));
+  }
+  100% { 
+    transform: translateY(-50px);
+  }
+}
+
+@keyframes drift {
+  0%, 100% {
+    transform: translateX(40px);
+  }
+  50% { 
+    transform: translateX(0);
+  }
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% { 
+    opacity: 1;
+  }
+}
+
