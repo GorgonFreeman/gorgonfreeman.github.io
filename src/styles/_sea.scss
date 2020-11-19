@@ -1,7 +1,9 @@
-$blue: #05205f;
-
 body.sea {
-  background: radial-gradient(ellipse at top center, #0d8a82 -50%, #151c35 80%);
+  color: #558087;
+
+  .background {
+    background: radial-gradient(ellipse at top center, #0d8a82 -50%, #151c35 80%);
+  }
 }
 
 $bubbles_count: 14;
