@@ -16,18 +16,26 @@ $bubble_delay_5: random(10) + s;
 $bubble_delay_6: random(10) + s;
 $bubble_delay_7: random(10) + s;
 
-html {
-  background: $blue;
-}
+@mixin bubbles {
+  @for $i from 1 through 9 {
+    &:nth-child(#{$i}) {
+      $bubble_width: random(90) + 30;
+      $bubble_delay: random(10) + s;
+      $bubble_position: percentage((random(80) + 10) / 100);
 
-.screen {
-  position: fixed;
-  pointer-events: none;
-  overflow: hidden;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+      left: $bubble_position;
+      animation-delay: $bubble_delay;
+
+      * {
+        animation-delay: $bubble_delay;
+      }
+
+      .bubble {
+        width: ($bubble_width + px);
+        height: ($bubble_width * 0.9 + px);
+      }
+    }
+  }
 }
 
 .bubble {
@@ -47,78 +55,21 @@ html {
   left: 0;
   opacity: 0;
 
-  + .bubble_wrapper_outer {
-    left: percentage((random(80) + 10) / 100);
-
-    .bubble {
-      width: ($bubble_width_1 + px);
-      height: ($bubble_width_1 * 0.9 + px);
-    }
-
-    + .bubble_wrapper_outer {
-      left: percentage((random(80) + 10) / 100);
-      .bubble {
-        width: ($bubble_width_2 + px);
-        height: ($bubble_width_2 * 0.9 + px);
-      }
-
-      + .bubble_wrapper_outer {
-        left: percentage((random(80) + 10) / 100);
-        .bubble {
-          width: ($bubble_width_3 + px);
-          height: ($bubble_width_3 * 0.9 + px);
-        }
-
-        + .bubble_wrapper_outer {
-          left: percentage((random(80) + 10) / 100);
-          .bubble {
-            width: ($bubble_width_4 + px);
-            height: ($bubble_width_4 * 0.9 + px);
-          }
-        }
-      }
-    }
-  }
+  @include bubbles;
 }
 
-.bubble_wrapper_outer {
-  animation-delay: $bubble_delay_1;
+html {
+  background: $blue;
+}
 
-  .bubble_wrapper_inner, .bubble {
-    animation-delay: $bubble_delay_1;
-  }
-
-  + .bubble_wrapper_outer {
-    animation-delay: $bubble_delay_2;
-
-    .bubble_wrapper_inner, .bubble {
-      animation-delay: $bubble_delay_2;
-    }
-
-    + .bubble_wrapper_outer {
-      animation-delay: $bubble_delay_3;
-
-      .bubble_wrapper_inner, .bubble {
-        animation-delay: $bubble_delay_3;
-      }
-
-      + .bubble_wrapper_outer {
-        animation-delay: $bubble_delay_4;
-
-        .bubble_wrapper_inner, .bubble {
-          animation-delay: $bubble_delay_4;
-        }
-
-        + .bubble_wrapper_outer {
-          animation-delay: $bubble_delay_5;
-
-          .bubble_wrapper_inner, .bubble {
-            animation-delay: $bubble_delay_5;
-          }
-        }
-      }
-    }
-  }
+.screen {
+  position: fixed;
+  pointer-events: none;
+  overflow: hidden;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 .bubble_wrapper_outer {
