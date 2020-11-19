@@ -6,7 +6,7 @@ $bubbles_count: 14;
   @for $i from 1 through $bubbles_count {
     &:nth-child(#{$i}) {
       $bubble_width: random(90) + 30;
-      $bubble_delay: random(10) + s;
+      $bubble_delay: random(20) + s;
       $position_interval: ceil(100 / $bubbles_count) * $i;
       $bubble_position: percentage((random($i) + $position_interval) / 100);
       left: $bubble_position;
