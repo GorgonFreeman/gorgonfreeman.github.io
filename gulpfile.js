@@ -1,6 +1,7 @@
 const gulp = require('gulp');
 const browserSync = require('browser-sync').create();
 const sass = require('gulp-sass');
+var injectPartials = require('gulp-inject-partials');
 
 // Static server
 gulp.task('start', function() {
@@ -12,6 +13,7 @@ gulp.task('start', function() {
 
   gulp.watch('src/styles/*.scss', gulp.parallel(['sass']));
   gulp.watch('src/assets/*', gulp.parallel(['assets']));
+  gulp.watch('src/html/*', gulp.parallel(['html']));
   gulp.watch('*.html').on('change', browserSync.reload);
 });
 
@@ -26,4 +28,10 @@ gulp.task('sass', function() {
 gulp.task('assets', function() {
   return gulp.src('src/assets/*')
     .pipe(gulp.dest('dist/assets'));
+});
+
+gulp.task('html', function () {
+  return gulp.src('./src/html/index.html')
+    .pipe(injectPartials())
+    .pipe(gulp.dest('./'));
 });
