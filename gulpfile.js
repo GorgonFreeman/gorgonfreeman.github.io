@@ -14,7 +14,7 @@ gulp.task('start', function() {
   gulp.watch('src/styles/*.scss', gulp.parallel(['sass']));
   gulp.watch('src/assets/*', gulp.parallel(['assets']));
   gulp.watch('src/html/**/*', gulp.parallel(['html']));
-  gulp.watch('*.html').on('change', browserSync.reload);
+  gulp.watch('dist/*.html').on('change', browserSync.reload);
 });
 
 // Compile sass into CSS & auto-inject into browsers
@@ -33,5 +33,5 @@ gulp.task('assets', function() {
 gulp.task('html', function() {
   return gulp.src('./src/html/index.html')
     .pipe(injectPartials())
-    .pipe(gulp.dest('./'));
+    .pipe(gulp.dest('./dist'));
 });
