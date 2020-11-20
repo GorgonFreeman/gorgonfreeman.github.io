@@ -5,6 +5,10 @@ body {
   font-smoothing: antialiased;
 }
 
+*, :after, :before {
+  box-sizing: border-box;
+}
+
 .sections {
   scroll-snap-type: y mandatory;
   height: 100vh;
@@ -14,6 +18,7 @@ body {
 section {
   height: 100vh;
   scroll-snap-align: start;
+  padding: 5% 10%;
 }
 
 .main {
@@ -21,9 +26,4 @@ section {
   display: flex;
   align-items: center;
   justify-content: space-around;
-}
-
-.main_title {
-  font-size: 36px;
-  font-size: 100px;
 }
