@@ -7,7 +7,7 @@ var injectPartials = require('gulp-inject-partials');
 gulp.task('start', function() {
   browserSync.init({
     server: {
-      baseDir: './'
+      baseDir: './dist'
     }
   });
 
