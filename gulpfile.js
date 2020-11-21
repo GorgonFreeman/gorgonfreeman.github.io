@@ -35,3 +35,5 @@ gulp.task('html', function() {
     .pipe(injectPartials())
     .pipe(gulp.dest('./dist'));
 });
+
+gulp.task('build', gulp.parallel(['sass', 'assets', 'html'])); 

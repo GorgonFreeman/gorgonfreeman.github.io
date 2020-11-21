@@ -4,7 +4,9 @@
   "description": "Static hosted site",
   "main": "index.js",
   "scripts": {
-    "start": "gulp start"
+    "prestart": "gulp build",
+    "start": "gulp start",
+    "build": "gulp build"
   },
   "repository": {
     "type": "git",
