@@ -1,4 +1,4 @@
-$footer_height: 70px;
+$footer_height: 100px;
 $footer_icon_dimensions: 50px;
 
 footer {
@@ -12,9 +12,34 @@ footer {
   margin-top: -$footer_height;
   padding: 0 10%;
 
+  @include media-breakpoint-down(md) {
+    height: 110px;
+    padding-bottom: 40px;
+    margin-top: -110px;
+  }
+
   svg {
     width: $footer_icon_dimensions;
     height: $footer_icon_dimensions;
+    fill: white;
+    margin-bottom: 10px;
+
+    .linkedin_square {
+      fill: white;
+    }
+    .linkedin_dot, .linkedin_i, .linkedin_n {
+      fill: #558087;
+    }
+
+    .gmail_envelope {
+      fill: white;
+    }
+    .gmail_m {
+      fill: #558087;
+    }
+    .gmail_shadow {
+      fill: #ccc;
+    }
   }
 
   a {
