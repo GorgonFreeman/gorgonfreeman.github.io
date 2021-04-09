@@ -6,7 +6,8 @@
   "scripts": {
     "prestart": "gulp build",
     "start": "gulp start",
-    "build": "gulp build"
+    "build": "gulp build",
+    "tunnel": "ngrok http 3000"
   },
   "repository": {
     "type": "git",
@@ -25,6 +26,7 @@
   },
   "dependencies": {
     "bootstrap": "^4.5.3",
-    "gulp-inject-partials": "^1.0.5"
+    "gulp-inject-partials": "^1.0.5",
+    "ngrok": "^4.0.1"
   }
 }
