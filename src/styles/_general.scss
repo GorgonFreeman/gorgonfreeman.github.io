@@ -41,13 +41,18 @@ section {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin: -20px 0;
+  margin: -20px;
 
   li {
     display: flex;
-    flex: 1 0 calc(100vw / 8);
+    flex: 0 0 120px;
     justify-content: center;
     margin: 20px 0;
+  }
+
+  &::after {
+    content: '';
+    flex: auto;
   }
 }
 
