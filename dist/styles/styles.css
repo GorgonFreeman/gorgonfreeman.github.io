@@ -1,3 +1,10 @@
+.general_reset, .skill_boxes {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  background: none;
+  list-style: none; }
+
 @font-face {
   font-family: 'Nunito';
   font-style: normal;
@@ -47,116 +54,116 @@ body.sea {
   opacity: 0; }
   .bubble_wrapper_outer:nth-child(1) {
     left: 9%;
-    animation-delay: 14s; }
+    animation-delay: 15s; }
     .bubble_wrapper_outer:nth-child(1) * {
-      animation-delay: 14s; }
+      animation-delay: 15s; }
     .bubble_wrapper_outer:nth-child(1) .bubble {
-      width: 49px;
-      height: 44.1px; }
+      width: 41px;
+      height: 36.9px; }
   .bubble_wrapper_outer:nth-child(2) {
-    left: 18%;
-    animation-delay: 19s; }
+    left: 17%;
+    animation-delay: 18s; }
     .bubble_wrapper_outer:nth-child(2) * {
-      animation-delay: 19s; }
+      animation-delay: 18s; }
     .bubble_wrapper_outer:nth-child(2) .bubble {
-      width: 53px;
-      height: 47.7px; }
+      width: 113px;
+      height: 101.7px; }
   .bubble_wrapper_outer:nth-child(3) {
     left: 25%;
-    animation-delay: 4s; }
-    .bubble_wrapper_outer:nth-child(3) * {
-      animation-delay: 4s; }
-    .bubble_wrapper_outer:nth-child(3) .bubble {
-      width: 63px;
-      height: 56.7px; }
-  .bubble_wrapper_outer:nth-child(4) {
-    left: 35%;
-    animation-delay: 8s; }
-    .bubble_wrapper_outer:nth-child(4) * {
-      animation-delay: 8s; }
-    .bubble_wrapper_outer:nth-child(4) .bubble {
-      width: 70px;
-      height: 63px; }
-  .bubble_wrapper_outer:nth-child(5) {
-    left: 42%;
-    animation-delay: 6s; }
-    .bubble_wrapper_outer:nth-child(5) * {
-      animation-delay: 6s; }
-    .bubble_wrapper_outer:nth-child(5) .bubble {
-      width: 44px;
-      height: 39.6px; }
-  .bubble_wrapper_outer:nth-child(6) {
-    left: 51%;
     animation-delay: 20s; }
-    .bubble_wrapper_outer:nth-child(6) * {
+    .bubble_wrapper_outer:nth-child(3) * {
       animation-delay: 20s; }
+    .bubble_wrapper_outer:nth-child(3) .bubble {
+      width: 82px;
+      height: 73.8px; }
+  .bubble_wrapper_outer:nth-child(4) {
+    left: 34%;
+    animation-delay: 12s; }
+    .bubble_wrapper_outer:nth-child(4) * {
+      animation-delay: 12s; }
+    .bubble_wrapper_outer:nth-child(4) .bubble {
+      width: 62px;
+      height: 55.8px; }
+  .bubble_wrapper_outer:nth-child(5) {
+    left: 41%;
+    animation-delay: 13s; }
+    .bubble_wrapper_outer:nth-child(5) * {
+      animation-delay: 13s; }
+    .bubble_wrapper_outer:nth-child(5) .bubble {
+      width: 115px;
+      height: 103.5px; }
+  .bubble_wrapper_outer:nth-child(6) {
+    left: 49%;
+    animation-delay: 3s; }
+    .bubble_wrapper_outer:nth-child(6) * {
+      animation-delay: 3s; }
     .bubble_wrapper_outer:nth-child(6) .bubble {
-      width: 102px;
-      height: 91.8px; }
+      width: 109px;
+      height: 98.1px; }
   .bubble_wrapper_outer:nth-child(7) {
-    left: 58%;
-    animation-delay: 10s; }
+    left: 62%;
+    animation-delay: 1s; }
     .bubble_wrapper_outer:nth-child(7) * {
-      animation-delay: 10s; }
+      animation-delay: 1s; }
     .bubble_wrapper_outer:nth-child(7) .bubble {
-      width: 33px;
-      height: 29.7px; }
+      width: 52px;
+      height: 46.8px; }
   .bubble_wrapper_outer:nth-child(8) {
-    left: 70%;
-    animation-delay: 8s; }
+    left: 66%;
+    animation-delay: 9s; }
     .bubble_wrapper_outer:nth-child(8) * {
-      animation-delay: 8s; }
+      animation-delay: 9s; }
     .bubble_wrapper_outer:nth-child(8) .bubble {
-      width: 38px;
-      height: 34.2px; }
+      width: 48px;
+      height: 43.2px; }
   .bubble_wrapper_outer:nth-child(9) {
-    left: 75%;
-    animation-delay: 16s; }
+    left: 79%;
+    animation-delay: 6s; }
     .bubble_wrapper_outer:nth-child(9) * {
-      animation-delay: 16s; }
+      animation-delay: 6s; }
     .bubble_wrapper_outer:nth-child(9) .bubble {
-      width: 85px;
-      height: 76.5px; }
+      width: 107px;
+      height: 96.3px; }
   .bubble_wrapper_outer:nth-child(10) {
-    left: 89%;
-    animation-delay: 11s; }
+    left: 81%;
+    animation-delay: 16s; }
     .bubble_wrapper_outer:nth-child(10) * {
-      animation-delay: 11s; }
+      animation-delay: 16s; }
     .bubble_wrapper_outer:nth-child(10) .bubble {
-      width: 85px;
-      height: 76.5px; }
+      width: 35px;
+      height: 31.5px; }
   .bubble_wrapper_outer:nth-child(11) {
-    left: 99%;
-    animation-delay: 11s; }
+    left: 96%;
+    animation-delay: 8s; }
     .bubble_wrapper_outer:nth-child(11) * {
-      animation-delay: 11s; }
+      animation-delay: 8s; }
     .bubble_wrapper_outer:nth-child(11) .bubble {
-      width: 65px;
-      height: 58.5px; }
+      width: 116px;
+      height: 104.4px; }
   .bubble_wrapper_outer:nth-child(12) {
-    left: 101%;
-    animation-delay: 5s; }
+    left: 98%;
+    animation-delay: 11s; }
     .bubble_wrapper_outer:nth-child(12) * {
-      animation-delay: 5s; }
+      animation-delay: 11s; }
     .bubble_wrapper_outer:nth-child(12) .bubble {
-      width: 85px;
-      height: 76.5px; }
+      width: 74px;
+      height: 66.6px; }
   .bubble_wrapper_outer:nth-child(13) {
-    left: 109%;
+    left: 115%;
     animation-delay: 18s; }
     .bubble_wrapper_outer:nth-child(13) * {
       animation-delay: 18s; }
     .bubble_wrapper_outer:nth-child(13) .bubble {
-      width: 40px;
-      height: 36px; }
+      width: 60px;
+      height: 54px; }
   .bubble_wrapper_outer:nth-child(14) {
-    left: 114%;
-    animation-delay: 2s; }
+    left: 116%;
+    animation-delay: 14s; }
     .bubble_wrapper_outer:nth-child(14) * {
-      animation-delay: 2s; }
+      animation-delay: 14s; }
     .bubble_wrapper_outer:nth-child(14) .bubble {
-      width: 40px;
-      height: 36px; }
+      width: 37px;
+      height: 33.3px; }
 
 .screen {
   position: fixed;
@@ -227,6 +234,31 @@ section {
   display: flex;
   align-items: center;
   justify-content: space-around; }
+
+.skill_boxes {
+  display: flex;
+  justify-content: space-between; }
+
+.skill_box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  line-height: 2;
+  transition: transform 200ms ease; }
+
+a.skill_box:hover {
+  transform: scale(1.5); }
+
+.skill_box_text {
+  background-color: black;
+  border-radius: 5px;
+  height: 60px;
+  width: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center; }
 
 footer {
   position: sticky;
