@@ -54,116 +54,116 @@ body.sea {
   opacity: 0; }
   .bubble_wrapper_outer:nth-child(1) {
     left: 9%;
-    animation-delay: 4s; }
+    animation-delay: 8s; }
     .bubble_wrapper_outer:nth-child(1) * {
-      animation-delay: 4s; }
+      animation-delay: 8s; }
     .bubble_wrapper_outer:nth-child(1) .bubble {
-      width: 31px;
-      height: 27.9px; }
+      width: 50px;
+      height: 45px; }
   .bubble_wrapper_outer:nth-child(2) {
-    left: 17%;
-    animation-delay: 2s; }
+    left: 18%;
+    animation-delay: 20s; }
     .bubble_wrapper_outer:nth-child(2) * {
-      animation-delay: 2s; }
+      animation-delay: 20s; }
     .bubble_wrapper_outer:nth-child(2) .bubble {
-      width: 113px;
-      height: 101.7px; }
+      width: 61px;
+      height: 54.9px; }
   .bubble_wrapper_outer:nth-child(3) {
-    left: 27%;
+    left: 25%;
     animation-delay: 2s; }
     .bubble_wrapper_outer:nth-child(3) * {
       animation-delay: 2s; }
     .bubble_wrapper_outer:nth-child(3) .bubble {
-      width: 70px;
-      height: 63px; }
+      width: 67px;
+      height: 60.3px; }
   .bubble_wrapper_outer:nth-child(4) {
     left: 34%;
-    animation-delay: 17s; }
+    animation-delay: 9s; }
     .bubble_wrapper_outer:nth-child(4) * {
-      animation-delay: 17s; }
+      animation-delay: 9s; }
     .bubble_wrapper_outer:nth-child(4) .bubble {
-      width: 116px;
-      height: 104.4px; }
+      width: 93px;
+      height: 83.7px; }
   .bubble_wrapper_outer:nth-child(5) {
     left: 43%;
-    animation-delay: 2s; }
+    animation-delay: 20s; }
     .bubble_wrapper_outer:nth-child(5) * {
-      animation-delay: 2s; }
+      animation-delay: 20s; }
     .bubble_wrapper_outer:nth-child(5) .bubble {
-      width: 95px;
-      height: 85.5px; }
+      width: 62px;
+      height: 55.8px; }
   .bubble_wrapper_outer:nth-child(6) {
-    left: 49%;
-    animation-delay: 17s; }
+    left: 53%;
+    animation-delay: 8s; }
     .bubble_wrapper_outer:nth-child(6) * {
-      animation-delay: 17s; }
+      animation-delay: 8s; }
     .bubble_wrapper_outer:nth-child(6) .bubble {
-      width: 117px;
-      height: 105.3px; }
+      width: 102px;
+      height: 91.8px; }
   .bubble_wrapper_outer:nth-child(7) {
-    left: 60%;
-    animation-delay: 4s; }
-    .bubble_wrapper_outer:nth-child(7) * {
-      animation-delay: 4s; }
-    .bubble_wrapper_outer:nth-child(7) .bubble {
-      width: 95px;
-      height: 85.5px; }
-  .bubble_wrapper_outer:nth-child(8) {
-    left: 69%;
-    animation-delay: 1s; }
-    .bubble_wrapper_outer:nth-child(8) * {
-      animation-delay: 1s; }
-    .bubble_wrapper_outer:nth-child(8) .bubble {
-      width: 88px;
-      height: 79.2px; }
-  .bubble_wrapper_outer:nth-child(9) {
-    left: 77%;
-    animation-delay: 11s; }
-    .bubble_wrapper_outer:nth-child(9) * {
-      animation-delay: 11s; }
-    .bubble_wrapper_outer:nth-child(9) .bubble {
-      width: 107px;
-      height: 96.3px; }
-  .bubble_wrapper_outer:nth-child(10) {
-    left: 81%;
-    animation-delay: 7s; }
-    .bubble_wrapper_outer:nth-child(10) * {
-      animation-delay: 7s; }
-    .bubble_wrapper_outer:nth-child(10) .bubble {
-      width: 78px;
-      height: 70.2px; }
-  .bubble_wrapper_outer:nth-child(11) {
-    left: 98%;
-    animation-delay: 1s; }
-    .bubble_wrapper_outer:nth-child(11) * {
-      animation-delay: 1s; }
-    .bubble_wrapper_outer:nth-child(11) .bubble {
-      width: 44px;
-      height: 39.6px; }
-  .bubble_wrapper_outer:nth-child(12) {
-    left: 99%;
-    animation-delay: 6s; }
-    .bubble_wrapper_outer:nth-child(12) * {
-      animation-delay: 6s; }
-    .bubble_wrapper_outer:nth-child(12) .bubble {
-      width: 40px;
-      height: 36px; }
-  .bubble_wrapper_outer:nth-child(13) {
-    left: 109%;
-    animation-delay: 9s; }
-    .bubble_wrapper_outer:nth-child(13) * {
-      animation-delay: 9s; }
-    .bubble_wrapper_outer:nth-child(13) .bubble {
-      width: 88px;
-      height: 79.2px; }
-  .bubble_wrapper_outer:nth-child(14) {
-    left: 126%;
+    left: 59%;
     animation-delay: 19s; }
-    .bubble_wrapper_outer:nth-child(14) * {
+    .bubble_wrapper_outer:nth-child(7) * {
       animation-delay: 19s; }
+    .bubble_wrapper_outer:nth-child(7) .bubble {
+      width: 49px;
+      height: 44.1px; }
+  .bubble_wrapper_outer:nth-child(8) {
+    left: 72%;
+    animation-delay: 14s; }
+    .bubble_wrapper_outer:nth-child(8) * {
+      animation-delay: 14s; }
+    .bubble_wrapper_outer:nth-child(8) .bubble {
+      width: 87px;
+      height: 78.3px; }
+  .bubble_wrapper_outer:nth-child(9) {
+    left: 79%;
+    animation-delay: 10s; }
+    .bubble_wrapper_outer:nth-child(9) * {
+      animation-delay: 10s; }
+    .bubble_wrapper_outer:nth-child(9) .bubble {
+      width: 91px;
+      height: 81.9px; }
+  .bubble_wrapper_outer:nth-child(10) {
+    left: 82%;
+    animation-delay: 6s; }
+    .bubble_wrapper_outer:nth-child(10) * {
+      animation-delay: 6s; }
+    .bubble_wrapper_outer:nth-child(10) .bubble {
+      width: 52px;
+      height: 46.8px; }
+  .bubble_wrapper_outer:nth-child(11) {
+    left: 90%;
+    animation-delay: 14s; }
+    .bubble_wrapper_outer:nth-child(11) * {
+      animation-delay: 14s; }
+    .bubble_wrapper_outer:nth-child(11) .bubble {
+      width: 104px;
+      height: 93.6px; }
+  .bubble_wrapper_outer:nth-child(12) {
+    left: 98%;
+    animation-delay: 5s; }
+    .bubble_wrapper_outer:nth-child(12) * {
+      animation-delay: 5s; }
+    .bubble_wrapper_outer:nth-child(12) .bubble {
+      width: 93px;
+      height: 83.7px; }
+  .bubble_wrapper_outer:nth-child(13) {
+    left: 107%;
+    animation-delay: 5s; }
+    .bubble_wrapper_outer:nth-child(13) * {
+      animation-delay: 5s; }
+    .bubble_wrapper_outer:nth-child(13) .bubble {
+      width: 118px;
+      height: 106.2px; }
+  .bubble_wrapper_outer:nth-child(14) {
+    left: 114%;
+    animation-delay: 11s; }
+    .bubble_wrapper_outer:nth-child(14) * {
+      animation-delay: 11s; }
     .bubble_wrapper_outer:nth-child(14) .bubble {
-      width: 108px;
-      height: 97.2px; }
+      width: 69px;
+      height: 62.1px; }
 
 .screen {
   position: fixed;
@@ -254,8 +254,9 @@ section {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  line-height: 2;
   transition: transform 200ms ease; }
+  .skill_box > span {
+    margin-top: 10px; }
 
 a.skill_box:hover {
   transform: scale(1.5); }
@@ -268,7 +269,9 @@ a.skill_box:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center; }
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px; }
 
 .skill_box_icon {
   height: 60px;
