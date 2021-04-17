@@ -27,6 +27,7 @@ section {
   height: 100vh;
   scroll-snap-align: start;
   padding: 50px 10%;
+  position: relative;
 }
 
 .main {
@@ -34,4 +35,40 @@ section {
   display: flex;
   align-items: center;
   justify-content: space-around;
+}
+
+.slides {
+  scroll-snap-type: x mandatory;
+  display: flex;
+  position: absolute;
+  width: 100vw;
+  overflow: scroll;
+}
+
+.slide {
+  flex: 0 0 100vw;
+  scroll-snap-align: start;
+}
+
+.slides_nav {
+  position: absolute;
+  top: calc(50% - 10px);
+
+  &.prev {
+    left: 0;
+  }
+
+  &.next {
+    right: 0;
+  }
+}
+
+section .slides {
+  margin: 0 -10%;
+  // Full height, minus the title and vertical padding of the section
+  height: calc(100% - 154px);
+
+  .slide {
+    padding: 0 10%;
+  }
 }
