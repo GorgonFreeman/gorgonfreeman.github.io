@@ -7,6 +7,17 @@ module.exports = {
     path: path.resolve('./dist/assets'),
     filename: 'bundle.js'
   },
+  module: {
+    rules: [
+      {
+        test: /\.(svg|html)$/i,
+        loader: 'html-loader',
+        options: {
+          interpolate: true,
+        },
+      },
+    ],
+  },
   devServer: {
     contentBase: path.resolve('./dist'),
     compress: true
