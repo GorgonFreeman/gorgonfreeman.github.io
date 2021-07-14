@@ -5,5 +5,9 @@ module.exports = {
   output: {
     path: path.resolve('./dist/assets'),
     filename: 'bundle.js'
+  },
+  devServer: {
+    contentBase: path.resolve('./dist'),
+    compress: true
   }
 }

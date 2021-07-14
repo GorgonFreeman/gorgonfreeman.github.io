@@ -20,15 +20,18 @@
   },
   "homepage": "https://github.com/GorgonFreeman/gorgonfreeman.github.io#readme",
   "devDependencies": {
+    "@webpack-cli/serve": "^1.5.1",
     "browser-sync": "^2.26.13",
     "gulp": "^4.0.2",
-    "gulp-sass": "^4.1.0"
+    "gulp-sass": "^4.1.0",
+    "webpack-dev-server": "^3.11.2"
   },
   "dependencies": {
     "bootstrap": "^4.5.3",
     "gulp-inject-partials": "^1.0.5",
     "ngrok": "^4.0.1",
     "path": "^0.12.7",
-    "webpack": "^5.38.1"
+    "webpack": "^5.38.1",
+    "webpack-cli": "^4.7.2"
   }
 }
