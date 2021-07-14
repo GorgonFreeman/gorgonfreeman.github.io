@@ -1,10 +1,10 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const path = require('path')
+const path = require('path');
 
 module.exports = {
   entry: './src/assets/scripts.js',
   output: {
-    path: path.resolve('./dist/assets'),
+    path: path.resolve('./dist'),
     filename: 'bundle.js'
   },
   module: {
@@ -19,8 +19,9 @@ module.exports = {
     ],
   },
   devServer: {
-    contentBase: path.resolve('./dist'),
-    compress: true
+    contentBase: 'dist',
+    compress: true,
+    open: true,
   },
   plugins: [
     new HtmlWebpackPlugin({
