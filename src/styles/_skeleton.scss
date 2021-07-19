@@ -1,0 +1,68 @@
+@keyframes shimmer {
+  from {
+    left: -200%;
+  }
+  to   {
+    left: 0%;
+  }
+}
+
+@mixin skeletate($width) {
+  @keyframes shimmer_#{$width} {
+    from {
+      left: -200% * (100 / $width);
+    }
+    to {
+      left: 0%;
+    }
+  }
+
+  &::before {
+    width: 300% * (100 / $width);
+    animation: shimmer_#{$width} 3s cubic-bezier(0.4, 0.0, 0.2, 1) infinite;
+  }
+}
+
+.skeleton_loader {
+  // box-shadow: 0 4px 10px 0 rgba(33, 33, 33, 0.15);
+  border-radius: 4px;
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 300%;
+    background: linear-gradient(to right, #e8e8e850 0%, #e8e8e850 33%, transparent 65%, #e8e8e850 66%, #e8e8e850 100%);
+    animation: shimmer 3s cubic-bezier(0.4, 0.0, 0.2, 1) infinite;
+  }
+
+  &.image {
+    border-radius: 50%;
+  }
+
+  &.text {
+    height: 1rem;
+    margin: 0.5rem 0;
+
+    &.a {
+      width: 40%;
+      @include skeletate(40);
+    }
+
+    &.b {
+      width: 20%;
+      @include skeletate(20);
+    }
+
+    &.d {
+      width: 80%;
+      @include skeletate(80);
+    }
+  }
+}
