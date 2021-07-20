@@ -72,3 +72,12 @@ section .slides {
     padding: 0 10%;
   }
 }
+
+.row {
+  display: flex;
+}
+
+.col {
+  flex: 1 0 auto;
+  margin: 0 10px;
+}
