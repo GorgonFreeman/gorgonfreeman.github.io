@@ -1,3 +1,5 @@
+@use 'sass:math';
+
 @keyframes shimmer {
   from {
     left: -200%;
@@ -10,7 +12,7 @@
 @mixin skeletate($width) {
   @keyframes shimmer_#{$width} {
     from {
-      left: -200% * (100 / $width);
+      left: -200% * math.div(100, $width);
     }
     to {
       left: 0%;
@@ -18,7 +20,7 @@
   }
 
   &::before {
-    width: 300% * (100 / $width);
+    width: 300% * math.div(100, $width);
     animation: shimmer_#{$width} 3s cubic-bezier(0.4, 0.0, 0.2, 1) infinite;
   }
 }

@@ -34,13 +34,14 @@ module.exports = {
         ],
       },
       {
-        test: /\.(woff|woff2|eot|ttf|otf)$/,
+        test: /\.(woff|woff2|eot|ttf|otf|png|jpg)$/,
         use: [
           {
             loader: 'file-loader',
             options: {
               outputPath: 'assets',
               publicPath: '',
+              name: '[name].[ext]'
             },
           },
         ],

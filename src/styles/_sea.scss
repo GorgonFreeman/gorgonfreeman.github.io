@@ -1,3 +1,5 @@
+@use 'sass:math';
+
 body.sea {
   color: #558087;
 
@@ -17,8 +19,8 @@ $bubbles_count: 14;
     &:nth-child(#{$i}) {
       $bubble_width: random(90) + 30;
       $bubble_delay: random(20) + s;
-      $position_interval: ceil(100 / $bubbles_count) * $i;
-      $bubble_position: percentage((random($i) + $position_interval) / 100);
+      $position_interval: ceil(math.div(100, $bubbles_count)) * $i;
+      $bubble_position: percentage(math.div(random($i) + $position-interval, 100));
       left: $bubble_position;
       animation-delay: $bubble_delay;
 
