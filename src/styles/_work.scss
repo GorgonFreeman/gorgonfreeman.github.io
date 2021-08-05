@@ -85,14 +85,12 @@ $showcase_desk_width: 50vw;
   }
 }
 
-#logoSwiper {
+.work_logo {
   position: absolute;
   top: 50px;
   right: 10%;
-  text-align: right;
-  width: 250px;
 
-  .swiper-slide * {
+  img, svg {
     height: 40px;
   }
 }

@@ -14,8 +14,8 @@ const workSwiper = new SwiperCore('#workSwiper', {
   }
 });
 
-const logoSwiper = new SwiperCore('#logoSwiper');
+// const logoSwiper = new SwiperCore('#logoSwiper');
 
-// Sync swipers
-workSwiper.controller.control = logoSwiper;
-logoSwiper.controller.control = workSwiper;
+// // Sync swipers
+// workSwiper.controller.control = logoSwiper;
+// logoSwiper.controller.control = workSwiper;
