@@ -1,3 +1,7 @@
+:root {
+  --swiper-theme-color: white;
+}
+
 html {
   background-color: black;
 }
@@ -88,4 +92,8 @@ section .slides {
 
 .single_line {
   line-height: 1;
+}
+
+.content_within_section {
+  height: calc(100% - 140px);
 }
