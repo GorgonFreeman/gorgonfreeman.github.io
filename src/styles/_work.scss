@@ -1,6 +1,3 @@
-$showcase_height_multiplier: 0.6;
-$showcase_desk_width: 50vw;
-
 :root {
   --device-colour: #151515;
   --device-lights: red;
@@ -8,13 +5,10 @@ $showcase_desk_width: 50vw;
 
 .showcase {
   position: relative;
-  width: $showcase_desk_width;
-  height: $showcase_desk_width * $showcase_height_multiplier;
-  // float: right;
-  // margin: 30px;
-
+  height: 100%;
   margin: 0 auto;
   display: block;
+  text-align: center;
 }
 
 .showcase_desktop, .showcase_mobile {
@@ -22,12 +16,8 @@ $showcase_desk_width: 50vw;
 }
 
 .showcase_desktop {
-  position: absolute;
-  top: 0;
-  right: 0;
+  position: relative;
   border-radius: 15px;
-  height: 90%;
-  width: 96%;
   border: 10px solid var(--device-colour);
   background-size: cover;
   // box-shadow: -4px 4px 5px #4d5d67;
@@ -57,15 +47,12 @@ $showcase_desk_width: 50vw;
 }
 
 .showcase_mobile {
-  position: absolute;
-  bottom: 0;
-  left: 0;
+  position: relative;
   border-radius: 15px;
-  height: 66%;
-  width: 24%;
   border: 5px solid var(--device-colour);
   box-shadow: inset 0 0 0 1px var(--device-colour);
   background-size: cover;
+  z-index: 2;
   // box-shadow: -4px 4px 5px #4d5d67;
 
   &::before {

@@ -97,3 +97,16 @@ section .slides {
 .content_within_section {
   height: calc(100% - 140px);
 }
+
+.ratio {
+  display: inline-grid;
+  height: 100%;
+
+  > * {
+    grid-area: 1/1;
+  }
+
+  > svg {
+    height: 100%;
+  }
+}
