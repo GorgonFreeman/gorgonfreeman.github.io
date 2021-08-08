@@ -5,7 +5,7 @@ import SwiperCore, { Navigation, Controller } from 'swiper/core';
 SwiperCore.use([Navigation, Controller]);
 
 // import Swiper styles
-// import 'swiper/swiper-bundle.css';
+import 'swiper/swiper-bundle.css';
 
 const workSwiper = new SwiperCore('#workSwiper', {
   navigation: {
