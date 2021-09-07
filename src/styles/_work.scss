@@ -6,9 +6,12 @@
 .showcase {
   position: relative;
   height: 100%;
+  max-width: 1600px;
   margin: 0 auto;
-  display: block;
-  text-align: center;
+  padding: 0 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .showcase_desktop, .showcase_mobile {
@@ -48,7 +51,7 @@
 
 .showcase_mobile {
   position: relative;
-  border-radius: 15px;
+  border-radius: 20px;
   border: 5px solid var(--device-colour);
   box-shadow: inset 0 0 0 1px var(--device-colour);
   background-size: cover;
@@ -81,6 +84,28 @@
       linear-gradient(to right, transparent 25%, var(--device-lights) 26%, var(--device-lights) 74%, transparent 75%);
     width: 20px;
   }
+}
+
+.showcase_desktop_wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  height: 95%;
+  padding-right: 30px;
+}
+
+.showcase_mobile_wrapper {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  height: 80%;
+}
+
+.showcase_wrapper {
+  position: relative;
+  // max-width: 80%;
 }
 
 .work_logo {

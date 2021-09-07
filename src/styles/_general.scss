@@ -110,3 +110,33 @@ section .slides {
     height: 100%;
   }
 }
+
+.ratio_height {
+  display: inline-grid;
+  height: 100%;
+
+  > * {
+    grid-area: 1/1;
+  }
+
+  > svg {
+    height: 100%;
+  }
+}
+
+.ratio_width {
+  display: inline-grid;
+  width: 100%;
+
+  > * {
+    grid-area: 1/1;
+  }
+
+  > svg {
+    width: 100%;
+  }
+}
+
+.rect {
+  background: red;
+}
