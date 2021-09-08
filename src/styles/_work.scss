@@ -122,3 +122,19 @@
 .showcase_button {
   margin-top: 30px;
 }
+
+.aldimobile_media {
+  background-image: linear-gradient(to right, #f68d6c, #a7228d, #014d93 50%, #007bbe);
+  padding: 15px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+
+  > * {
+    margin: 10px;
+  }
+
+  > svg {
+    height: 80px;
+  }
+}
