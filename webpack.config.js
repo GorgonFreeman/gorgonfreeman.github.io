@@ -46,6 +46,14 @@ module.exports = {
           },
         ],
       },
+      {
+        test: /\.(js|jsx)$/i,
+        loader: 'babel-loader',
+        exclude: /node_modules/,
+        options: {
+          presets: ['@babel/env', '@babel/react']
+        }
+      },
     ],
   },
   devServer: {

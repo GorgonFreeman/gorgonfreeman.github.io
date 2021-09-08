@@ -1,10 +1,10 @@
-// core version + navigation:
+import React from 'react';
+import { render } from 'react-dom';
+
 import SwiperCore, { Navigation, Controller } from 'swiper/core';
 
-// configure Swiper to use modules
 SwiperCore.use([Navigation, Controller]);
 
-// import Swiper styles
 import 'swiper/swiper-bundle.css';
 
 const workSwiper = new SwiperCore('#workSwiper', {
@@ -14,8 +14,22 @@ const workSwiper = new SwiperCore('#workSwiper', {
   }
 });
 
-// const logoSwiper = new SwiperCore('#logoSwiper');
+class BGSwitcher extends React.Component {
+  state = { 
+    text: 'Hi!'
+  };
 
-// // Sync swipers
-// workSwiper.controller.control = logoSwiper;
-// logoSwiper.controller.control = workSwiper;
+  setText = e => {
+    this.setState({ text: e.target.value });
+  }
+
+  render() {
+    const { text } = this.state; 
+    return <>
+      <input type="text" value={ text } onChange={ this.setText } />
+      { text }
+    </>
+  }
+}
+
+render(<BGSwitcher />, document.getElementById('BGSwitcher'));
