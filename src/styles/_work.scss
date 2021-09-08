@@ -12,6 +12,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 .showcase_desktop, .showcase_mobile {
@@ -116,4 +117,8 @@
   img, svg {
     height: 40px;
   }
+}
+
+.showcase_button {
+  margin-top: 30px;
 }

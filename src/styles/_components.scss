@@ -1,0 +1,16 @@
+.button {
+  background-color: #558087;
+  padding: 10px 15px;
+  border-radius: 1rem;
+  font-size: 20px;
+  box-shadow: #15253c8a 0 10px 5px;
+
+  transform: translateY(-10px);
+  transition: box-shadow 300ms, transform 300ms;
+
+  &:hover {
+    box-shadow: #15253c8a 0 0 0;
+
+    transform: translateY(0);
+  }
+}
