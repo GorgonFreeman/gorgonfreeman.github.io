@@ -53,4 +53,13 @@ footer {
       color: #81f7e2;
     }
   }
+
+  @include media-breakpoint-up(md) {
+    justify-content: center;
+
+    a {
+      padding: 0 50px;
+    }
+  }
 }
+
