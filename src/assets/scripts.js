@@ -14,22 +14,22 @@ const workSwiper = new SwiperCore('#workSwiper', {
   }
 });
 
-class BGSwitcher extends React.Component {
-  state = { 
-    text: 'Hi!'
-  };
+// class BGSwitcher extends React.Component {
+//   state = { 
+//     text: 'Hi!'
+//   };
 
-  setText = e => {
-    this.setState({ text: e.target.value });
-  }
+//   setText = e => {
+//     this.setState({ text: e.target.value });
+//   }
 
-  render() {
-    const { text } = this.state; 
-    return <>
-      <input type="text" value={ text } onChange={ this.setText } />
-      { text }
-    </>
-  }
-}
+//   render() {
+//     const { text } = this.state; 
+//     return <>
+//       <input type="text" value={ text } onChange={ this.setText } />
+//       { text }
+//     </>
+//   }
+// }
 
-render(<BGSwitcher />, document.getElementById('BGSwitcher'));
+// render(<BGSwitcher />, document.getElementById('BGSwitcher'));
